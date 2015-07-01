@@ -1,0 +1,18 @@
+/*
+Theme Name: Reerka Network
+Theme URI: http://reerka.com/
+Author: Mo & Mo
+Description: A Community Site
+Version: 1.0
+
+*/
+
+html,body{
+	height: 100%;
+}
+
+h2{
+	font-size: 200px;
+	background-color: red;
+
+}
