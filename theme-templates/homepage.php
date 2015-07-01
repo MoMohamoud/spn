@@ -2,7 +2,7 @@
 
 <?php
 /*
-Template Name: Name_of_Template_for_Dropdown
+Template Name: Homepage
 */
 ?>
 
