@@ -9,8 +9,8 @@
     <!--=== LINK TAGS ===-->
     <!-- <link rel="shortcut icon" href="<?php // echo THEME_DIR; ?>/path/favicon.ico" /> -->
     <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
- 
-    <!--=== TITLE ===-->  
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,400,300,600,700,800' rel='stylesheet' type='text/css'>    <!--=== TITLE ===-->  
+    <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
     <title><?php wp_title(); ?> - <?php bloginfo( 'name' ); ?></title>
      
     <!--=== WP_HEAD() ===-->

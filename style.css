@@ -11,8 +11,105 @@ html,body{
 	height: 100%;
 }
 
-h2{
-	font-size: 200px;
-	background-color: red;
+* {
+	font-family: 'Open Sans', sans-serif;
+}
+
+.no-padding{
+	padding: 0;
+}
+
+.no-margin{
+	margin: 0;
+}
+
+.relative{
+	position: relative;
+}
+
+.absolute{
+	position: absolute;
+}
+
+.txt-align-center{
+	text-align: center;
+}
+
+/*======= Landing Nav ========*/
+
+.navbar{
+	border-bottom: 1px solid rgba(0,0,0,.1);
+}
+
+.lan-nav li a{
+	font-family: 'Montserrat', sans-serif;
+	color:#000;
+	font-size: .87em;
+	transition: all .5s ease;
+}
+
+.lan-nav li a:hover{
+	color: #ee4e22;
+	background-color: transparent;
+}
+
+
+.lan-nav-width{
+	padding: 30px;
+}
+
+.logo img{
+
+	height: 60px;
+  	width: 60px;
+}
+
+.glyphicon-menu-hamburger{
+	color: #ee4e22;
+	font-size: 2em;
+}
+
+.cen-button{
+	width: 100%;
+}
+
+.nav li{
+	text-align: center;
+}
+
+/*=========== Landing Banner ==========*/
+
+.banner{
+	background-image: url(./img/road.jpg);
+	height: 600px;
+	background-position: center center;
+  	background-size: cover;
+  	background-repeat: no-repeat;
+  	position: relative;
+}
+
+.banner .form-control{
+	width: auto;
+}
+
+.bg-forum{
+	background-color: rgba(255, 123, 0, 0.81);
+	padding: 30px;
+	border-radius: 10px;
+}
+
+/*====== Media Query =========*/
+
+@media (min-width: 1054px){
+	.lan-nav-width{
+		width: 1080px;
+	}
+
+}
+
+@media(max-width: 767px){
+	.navbar-brand{
+		position: absolute;
+	}
 
 }
