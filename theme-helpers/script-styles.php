@@ -36,6 +36,9 @@ add_action( 'wp_enqueue_scripts', 'reerka_styles' );
     wp_register_script( 'collapse', get_template_directory_uri() . '/js/collapse.min.js', array('transition'), null, true );
     wp_enqueue_script( 'collapse' );
 
+    wp_register_script( 'tabs', get_template_directory_uri() . '/js/tabs.min.js', array('transition'), null, true );
+    wp_enqueue_script( 'tabs' );
+
 
 
 

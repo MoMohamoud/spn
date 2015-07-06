@@ -89,14 +89,99 @@ html,body{
 }
 
 .banner .form-control{
-	width: auto;
+	width: 100%;
+	border: 1px solid rgba(255, 165, 0, .5);
+
 }
 
-.bg-forum{
-	background-color: rgba(255, 123, 0, 0.81);
-	padding: 30px;
-	border-radius: 10px;
+.banner .btn{
+	/*background-color: rgba(255, 165, 0, 1);*/
+	background-color: rgba(255, 142, 0, 1);
+  	padding: 15px;
+  	width: 100%;
+  	border: 1px solid rgba(255, 165, 0, 1);
+  	font-size: 1.1em;
+  	color:#fff;
+ 	font-family: 'Open Sans', sans-serif;
+  	transition: all .5s ease;
 }
+
+.banner .btn:hover{
+	background-color: transparent;
+	border: 1px solid rgba(255, 165, 0, .5);
+	color:#000;
+  	font-family: 'Montserrat', sans-serif;
+}
+
+.banner .nav li a{
+	font-family: 'Montserrat', sans-serif;
+	color: #000;
+	/*width: 50%;*/
+}
+
+.banner .nav li{
+	width: 50%;
+}
+
+.nav-tabs li a{
+	padding: 15px 20px;
+	margin: 0;
+	transition: all .5s ease;
+}
+
+.checkbox label{
+	  float: left;
+  margin-bottom: 20px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.or-brand:checked{
+	background-color: red;
+}
+
+input[type="checkbox"]:checked:before{
+	background-color: red !important;
+	color: red !important;
+}
+
+
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover{
+	background-color: transparent;
+	color:#000;
+	border-color:rgba(255, 165, 0, 1);
+
+
+}
+
+.nav-tabs{
+	border-bottom: 0;
+	margin: 20px auto;
+}
+
+
+
+.form-control:focus{
+	border-color:rgba(255, 165, 0, 1);
+	box-shadow: none;
+}
+.bg-forum{
+	background-color: rgba(255, 255, 255, 0.81);
+	padding: 30px;
+	border-radius: 5px;
+}
+
+.wrapper { 
+	display: table; 
+	width: 100%; 
+	height: 100%;
+}
+.main { 
+	display: table-cell; 
+	vertical-align: middle;
+	text-align:center;
+}
+
+
 
 /*====== Media Query =========*/
 
