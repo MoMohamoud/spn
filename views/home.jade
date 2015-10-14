@@ -1,0 +1,332 @@
+doctype html
+html
+  head
+    title Reerka Network
+    | &#x9;
+    meta(name='viewport', content='width=device-width')
+    | &#x9;
+    link(href='https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans', rel='stylesheet', type='text/css')
+    | &#x9;
+    link(rel='stylesheet', type='text/css', href='css/style.css')
+    | &#x9;
+    link(rel='stylesheet', type='text/css', href='css/slick.css')
+    | &#x9;
+    link(rel='stylesheet', type='text/css', href='css/slick-theme.css')
+    | &#x9;
+    script(type='text/javascript', src='js/jquery.min.js')
+    | &#x9;
+    script(type='text/javascript', src='js/bootstrap.min.js')
+    | &#x9;&#x9;
+    script(type='text/javascript', src='js/slick.min.js')
+    | &#x9;&#x9;
+    script(type='text/javascript', src='js/script.js')
+  body
+    // nav
+    nav#nav.navbar.bg-blackbar
+      .container
+        // Brand and toggle get grouped for better mobile display
+        .navbar-header.sm-ta-center
+          .logo.navbar-brand
+            a(href='#')
+              img.img-responsive.img-circle(src='img/logo/interimlogo3.jpg')
+          |         
+          .orange-b.u-case.sm-pull-right
+            h1 Reerka
+          |         
+          .ta-center
+            button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#bs-example-navbar-collapse-1', aria-expanded='false')
+              span.sr-only Toggle navigation
+              | &#x9;            
+              span.icon-bar
+              | &#x9;            
+              span.icon-bar
+              | &#x9;            
+              span.icon-bar
+              // <i class="glyphicon glyphicon-menu-hamburger"></i>
+        // Collect the nav links, forms, and other content for toggling
+        #bs-example-navbar-collapse-1.collapse.navbar-collapse.lan-nav
+          .nav.navbar-nav.navbar-right.sm-ta-center
+            a.w-f.marg-h-10(href='newsfeed.html') Welcome #{user.firstName}
+            |     &#x9;
+            a.button.btn.sign-up-button.u-case.mrg-v-xs240(class='sign-up-button', href='/signout') Sign Out
+        // /.navbar-collapse
+      // /.container-fluid
+    section.banner.landing-banner
+      .dark-overlay
+        .container
+          .row
+            .col-md-12
+              article.mrg-top.ta-center.w-f
+                h2.u-case.let-spacing.banner-header
+                  | A 
+                  span.orange-b Family
+                  | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;of Young Professionals
+                | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                h4.banner-desc
+                  | For everything you do and everyone you meet,
+                  | Reerka connects you with an online family
+        | &#x9;&#x9;
+        section.bg-grey.btm-pos-search
+          article.container.login-fields
+            .row
+              #user
+                h1.text-center.login-title Welcome #{user.firstName}. Check your details below:
+                  div.signup-wall
+                    ul.user-details
+                      li Username ---> #{user.username}
+                      li Email    ---> #{user.email}
+                      li First Name ---> #{user.firstName} 
+                      li Last Name ---> #{user.lastName}
+    section.brd-grey
+      .container
+        .row
+          .col-md-7.col-md-offset-3.col-sm-8.col-sm-offset-3.col-xs-12
+            article.ta-center
+              ul.login-icons.ta-center.no-padding
+                li.u-case.grey-b.lg-text.xs-font Log in with
+                | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                li.brd-sd
+                  button.s-icons.gp(type='button') Google +
+                | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                li.brd-sd
+                  button.s-icons.fb(type='button') Facebook
+                | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                li.brd-sd
+                  button.s-icons.ln(type='button') LinkedIn
+                | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                li.brd-sd
+                  button.s-icons.tw(type='button') Twitter
+    section.container
+      .mrg-top-5
+        .row
+          .col-sm-12.ta-center
+            h1.grey-dark-b
+              | Who is 
+              span.orange-b.u-case Reerka?
+        | &#x9;&#x9;
+        .row.mrg-top-5
+          .col-sm-4.orange-b
+            h3.no-mrg-top Lorem ipsum dolo sit amet purus diam
+          | &#x9;&#x9;&#x9;
+          .col-sm-8
+            p
+              | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce volutpat erat ligula, vitae pellentesque arcu mollis vitae. Nulla consequat, lorem ac vehicula faucibus, purus diam fringilla augue, quis mollis quam tortor in arcu. Integer ac tempor diam, vel vulputate lorem.
+      | &#x9;
+      .row
+        .col-sm-12.ta-center.mrg-3-v
+          p.grey-b Let&apos;s find out what Reerka can do for you
+          | &#x9;
+          | &#x9;&#x9;&#x9;
+          .mrg-3-v(id='arrow-anchor mrg-top-2')
+            #arrows
+              a(href='#')
+                span.cent-arrows.cent-arrow-1
+                | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                span.cent-arrows.cent-arrow-2
+    section.build-network
+      .darker-overlay.rad-grad
+        .container
+          .row
+            .col-sm-12
+              article.w-f.ta-center
+                h2.padding-4-top
+                  | Build Your 
+                  span.orange-b Network
+                | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                p.b-desc.padding-2-top
+                  | Start your profile and build a network around people from school, work and/or within your community.
+          | &#x9;&#x9;&#x9;
+          .row
+            .col-lg-8.col-lg-offset-2.col-md-8.col-md-offset-2.col-sm-10.col-sm-offset-1.col-xs-12
+              article.padding-5-v.relative
+                div
+                  .brd-white
+                    .brd-lines
+                      .row
+                        .col-md-4.col-sm-2.col-xs-12.padding-5-v
+                          img.img-responsive.m-auto(src='img/landingpage/prof-network.jpg')
+                        | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                        .col-md-8.col-sm-10.col-xs-12.xs-max-ta-center
+                          h3.orange-b Create Your Profile
+                          | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                          p.b-f Be apart of an online family
+                          | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                          .brd-bttom.mrg-5-v
+                          | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                          ul.ntw-work.padding-5-h.orange-b
+                            li
+                              span.grey-b Seek career advice and network
+                            | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                            li
+                              span.grey-b Post your experiences, latest news and recent successes
+                            | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                            li
+                              span.grey-b Connect with others and build your network family
+        // container
+      // darker-overlay rad-grad
+    section.container.keeping.pd-btm-10
+      article.ta-center
+        .row
+          .col-sm-12
+            h2.padding-4-v
+              | Keeping you 
+              span.orange-b Involved
+        | &#x9;&#x9;
+        .row
+          article.col-md-4.mrg-sm-5-v
+            .padding-10-h
+              .jboard.involved-1
+                .grey-overlay
+                  .padding-10-10
+                    .white-circle.relative.mrg-5-v
+                      .sc-icon-center
+                        img.img-responsive.m-auto(src='img/sectionicons/j-board.png')
+                    | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                    h4.padding-text.u-case
+                      span.orange-b Job
+                      |  Board
+                    | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                    p.b-desc.padding-2-v Feel passionate about where you work
+          | &#x9;&#x9;&#x9;
+          article.col-md-4.mrg-sm-5-v
+            .padding-10-h
+              .b-directory.involved-1
+                .grey-overlay
+                  .padding-10-10
+                    .white-circle.relative.mrg-5-v
+                      .sc-icon-center
+                        img.img-responsive.m-auto(src='img/sectionicons/b-directory.png')
+                    | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                    h4.padding-text.u-case
+                      span.orange-b Business
+                      |  Directory
+                    | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                    p.b-desc.padding-2-v Publicize your Business and reach out
+          | &#x9;&#x9;&#x9;
+          article.col-md-4.mrg-sm-5-v
+            .padding-10-h
+              .events.involved-1
+                .grey-overlay
+                  .padding-10-10
+                    .white-circle.relative.mrg-5-v
+                      .sc-icon-center
+                        img.img-responsive.m-auto(src='img/sectionicons/events.png')
+                    | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                    h4.padding-text.u-case
+                      span.orange-b Recent
+                      |  Events
+                    | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                    p.b-desc.padding-2-v Check for upcoming events in your network
+    section.build-network.succ-str
+      .darker-overlay.rad-grad
+        .container
+          .row
+            .col-md-12.padding-10-v
+              .big-white-circle-centered.relative
+                .circle-1
+                  .str-line-1
+                  | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                  .white-img-circles.white-img-circles-size-1.sc-circle-pos-1.relative.circle-bg-img-setting.bg-image-1
+                | &#x9;&#x9;&#x9;&#x9;&#x9;
+                .circle-2
+                  .str-line-2
+                  | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                  .white-img-circles.white-img-circles-size-2.sc-circle-pos-2.relative.circle-bg-img-setting.bg-image-2
+                | &#x9;&#x9;&#x9;&#x9;&#x9;
+                .circle-3
+                  .str-line-3
+                  | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                  .white-img-circles.white-img-circles-size-3.sc-circle-pos-3.relative.circle-bg-img-setting.bg-image-3
+                | &#x9;&#x9;&#x9;&#x9;&#x9;
+                .circle-4
+                  .str-line-4
+                  | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                  .white-img-circles.white-img-circles-size-4.sc-circle-pos-4.relative.circle-bg-img-setting.bg-image-4
+                | &#x9;&#x9;&#x9;&#x9;&#x9;
+                .circle-5
+                  .str-line-5
+                  | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                  .white-img-circles.white-img-circles-size-5.sc-circle-pos-5.relative.circle-bg-img-setting.bg-image-5
+                | &#x9;&#x9;&#x9;&#x9;&#x9;
+                | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                article.b-f.ta-center.sc-text-center
+                  h2.padding-4-top
+                    span.orange-b Success
+                    |  Stories
+                  | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                  p.mrg-v-15 Share and promote successful individuals or businesses within your network.
+        // container
+      // darker-overlay rad-grad
+    section.container
+      .padding-4-v
+        .row
+          .col-sm-12.ta-center.mrg-top-5
+            h1.grey-dark-b
+              | Who&apos;s Working with 
+              span.orange-b.u-case Us
+              | ?
+        | &#x9;&#x9;
+        .row.mrg-top-5.sponsors
+          .col-sm-3.col-xs-6
+            img.img-responsive.mrg-5-v(src='img/sponsors/dahab_v002.png', title='dahabshill')
+          | &#x9;&#x9;&#x9;
+          .col-sm-3.col-xs-6
+            img.img-responsive.mrg-5-v(src='img/sponsors/edmontonmba_v002.jpg', title='Edmonton MBA')
+          | &#x9;&#x9;&#x9;
+          .col-sm-3.col-xs-6
+            img.img-responsive.mrg-5-v(src='img/sponsors/amalexpress_v002.jpg', title='Amal Express')
+          | &#x9;&#x9;&#x9;
+          .col-sm-3.col-xs-6
+            img.img-responsive.mrg-5-v(src='img/sponsors/hamdi_logo_v002.png', title='Hamdi Restaurant')
+    section.brd-grey
+      section.container
+        .mrg-top-5
+          .row
+            .col-md-12.relative.mrg-5-btm
+              article.grey-circle
+                .profile-default
+          | &#x9;&#x9;&#x9;
+          .row
+            .col-sm-12.ta-center
+              p REERKA, a family of professionals
+              | &#x9;&#x9;&#x9;&#x9;&#x9;
+              h1.grey-dark-b
+                span.orange-b.u-case Join Us
+                |  today!
+              | &#x9;&#x9;&#x9;&#x9;&#x9;
+              button.btn.mrg-top-5.sign-up-button.u-case.mrg-v-xs240.padding-horz-2 Sign Up with Reerka
+              | &#x9;&#x9;&#x9;&#x9;&#x9;
+              #arrow-anchor.mrg-3-v
+                #arrows.rotate-arrow-up
+                  a(href='#')
+                    span.cent-arrows.cent-arrow-1
+                    | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                    span.cent-arrows.cent-arrow-2
+                    //
+                      <img class="cent-arrows cent-arrow-1 img-responsive" src="img/arrowdown.png" title="arrows">
+                      <img class="cent-arrows cent-arrow-2 img-responsive up-arrows" src="img/arrowdown.png" title="arrows">
+    section.brd-grey
+      .container
+        .row
+          .col-md-7.col-md-offset-3.col-sm-8.col-sm-offset-3.col-xs-12
+            article.ta-center
+              ul.login-icons.ta-center.no-padding
+                li.u-case.grey-b.lg-text.xs-font Log in with
+                | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                li.brd-sd
+                  button.s-icons.gp(type='button') Google +
+                | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                li.brd-sd
+                  button.s-icons.fb(type='button') Facebook
+                | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                li.brd-sd
+                  button.s-icons.ln(type='button') LinkedIn
+                | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                li.brd-sd
+                  button.s-icons.tw(type='button') Twitter
+    footer
+      section.orange-bg
+        .container
+          .row
+            .col-md-12.ta-center.w-f
+              p.mrg-1-v.op-sans-fnt Copyright 2015 Reerka
